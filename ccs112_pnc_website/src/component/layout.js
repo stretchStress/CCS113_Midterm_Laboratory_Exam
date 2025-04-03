@@ -57,8 +57,8 @@ const Layout = ({ children }) => {
 
       <style>
         {`
-            .bg-orange { background-color: #e8792f !important; }
-            .nav-link:hover { color: #ff9800 !important; }
+            .bg-orange { background-color:rgb(46, 126, 34) !important; }
+            .nav-link:hover { color:rgb(46, 126, 34) !important; }
         `}
       </style>
     </div>
