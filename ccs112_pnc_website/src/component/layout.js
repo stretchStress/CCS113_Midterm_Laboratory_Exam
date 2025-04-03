@@ -61,7 +61,7 @@ const Layout = ({ children }) => {
           <p className="mb-1">
             &copy; 2025 Pamantasan ng Cabuyao. All rights reserved.
           </p>
-          <small>Designed for Application Development Course</small>
+          <small>CCS112 - Applications Development and Emerging Technologies</small>
         </div>
       </footer>
 
