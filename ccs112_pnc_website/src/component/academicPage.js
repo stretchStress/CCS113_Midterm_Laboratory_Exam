@@ -41,7 +41,7 @@ const Academic = () => {
         "Bachelor of Elementary Education",
         "Bachelor of Secondary Education",
       ],
-      image: "/images/College of Education.png", // Add image path
+      image: "/images/College of Education.jpg", // Add image path
     },
     {
       id: "engineering",
