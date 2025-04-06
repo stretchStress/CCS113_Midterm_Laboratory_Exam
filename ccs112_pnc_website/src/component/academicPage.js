@@ -3,14 +3,14 @@ import { useParams, Link } from "react-router-dom";
 import Layout from "./layout";
 
 const Academic = () => {
-  const { department } = useParams(); // Extract the department parameter
+  const { department } = useParams();
   const colleges = [
     {
       id: "arts-and-sciences",
       name: "College of Arts and Sciences",
       description: "College of Arts and Sciences holds in the ideals of learning by doing, making connections, and creating a community of progress that promotes social awareness and involvement by introducing students to advanced academic pursuits in promoting globally competitive professionals in the field of Psychology and in the programs for liberal arts education in the future.",
       programs: ["Bachelor of Science in Psychology"],
-      image: "/images/College of Arts and Sciences.png", // Add image path
+      image: "/images/College of Arts and Sciences.png",
     },
     {
       id: "business-accountancy",
@@ -21,7 +21,7 @@ const Academic = () => {
         "Bachelor of Science in Business Administration Major in Financial Management",
         "Bachelor of Science in Business Administration Major in Marketing Management",
       ],
-      image: "/images/College of Business, Accountancy and Administration.png", // Add image path
+      image: "/images/College of Business, Accountancy and Administration.png", 
     },
     {
       id: "computing-studies",
@@ -31,7 +31,7 @@ const Academic = () => {
         "Bachelor of Science in Information Technology",
         "Bachelor of Science in Computer Science",
       ],
-      image: "/images/College of Computing Studies.png", // Add image path
+      image: "/images/College of Computing Studies.png", 
     },
     {
       id: "education",
@@ -41,7 +41,7 @@ const Academic = () => {
         "Bachelor of Elementary Education",
         "Bachelor of Secondary Education",
       ],
-      image: "/images/College of Education.jpg", // Add image path
+      image: "/images/College of Education.jpg", 
     },
     {
       id: "engineering",
@@ -52,14 +52,14 @@ const Academic = () => {
         "Bachelor of Science in Electronics Engineering",
         "Bachelor of Science in Industrial Engineering",
       ],
-      image: "/images/College of Engineering.png", // Add image path
+      image: "/images/College of Engineering.png",
     },
     {
       id: "health-allied-sciences",
       name: "College of Health and Allied Sciences",
       description: "Equipping students with competence and commitment to preserve humanity as stewards of God’s creation, the College of Health and Allied Sciences (CHAS) aims to produce healthcare professionals in the fields of Nursing and Psychology who can provide effective and efficient health services compliant with global standards.",
       programs: ["Bachelor of Science in Nursing"],
-      image: "/images/College of Health and Allied Sciences.png", // Add image path
+      image: "/images/College of Health and Allied Sciences.png", 
     },
   ];
 
@@ -143,15 +143,15 @@ const Academic = () => {
                         key={idx}
                         className="list-group-item"
                         style={{
-                            display: "inline-block", // Make the border fit the text width
+                            display: "inline-block", 
                             backgroundColor: "#ffffff",
                             border: "1px solid #ddd",
                             borderRadius: "5px",
                             marginBottom: "0.5rem",
                             marginRight: "0.5rem",
-                            padding: "0.3rem 0.8rem", // Adjust padding for a tighter fit
+                            padding: "0.3rem 0.8rem", 
                             transition: "all 0.3s ease",
-                            width: "auto", // Ensure the width is only as wide as the content
+                            width: "auto",
                         }}
                         >
                         <Link
