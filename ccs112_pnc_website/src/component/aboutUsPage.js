@@ -145,12 +145,12 @@ const AboutUs = () => {
           </Col>
         </Row>
         <Row className="mb-5">
-          <Col md={4}>
+          <Col xs={12} md={4}>
             <Card className="shadow-sm text-center">
               <Card.Img 
                 variant="top" 
                 src="/images/zandra.jpg" 
-                style={{ height: "250px", objectFit: "cover" }}
+                style={{ height: "250px", objectFit: "contain" }}
               />
               <Card.Body>
                 <Card.Title>Dr. Zandra N. Maningas</Card.Title>
@@ -159,12 +159,12 @@ const AboutUs = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={4}>
+          <Col xs={12} md={4}>
             <Card className="shadow-sm text-center">
               <Card.Img 
                 variant="top" 
                 src="/images/professor.jpg" 
-                style={{ height: "250px", objectFit: "cover" }}
+                style={{ height: "250px", objectFit: "contain" }}
               />
               <Card.Body>
                 <Card.Title>Dr. Charlemagne Laviña</Card.Title>
@@ -173,12 +173,12 @@ const AboutUs = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={4}>
+          <Col xs={12} md={4}>
             <Card className="shadow-sm text-center">
               <Card.Img 
                 variant="top" 
                 src="/images/org_chart.png" 
-                style={{ height: "250px", objectFit: "cover" }}
+                style={{ height: "250px", objectFit: "contain" }}
               />
               <Card.Body>
                 <Card.Title>Organization Chart</Card.Title>
@@ -188,6 +188,7 @@ const AboutUs = () => {
             </Card>
           </Col>
         </Row>
+
 
         {/* Contact & Social Media Section */}
         <Row className="mb-5">
