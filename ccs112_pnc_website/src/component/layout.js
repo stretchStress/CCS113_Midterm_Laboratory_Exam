@@ -23,10 +23,29 @@ const Layout = ({ children }) => {
                   About Us
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link to="/admission" className="nav-link">
+              
+              <li className="nav-item dropdown">
+                <span
+                  className="nav-link dropdown-toggle"
+                  id="admissionDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Admission
-                </Link>
+                </span>
+                <ul className="dropdown-menu" aria-labelledby="admissionDropdown">
+                  <li>
+                    <Link to="/admission" className="dropdown-item">
+                      Requirements
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/procedure" className="dropdown-item">
+                      Enrollment Procedure
+                    </Link>
+                  </li>
+                </ul>
               </li>
               <li className="nav-item dropdown">
                 <Link
@@ -95,8 +114,15 @@ const Layout = ({ children }) => {
 
       <style>
         {`
-            .bg-orange { background-color:rgb(46, 126, 34) !important; }
-            .nav-link:hover { color:rgb(46, 126, 34) !important; }
+          .bg-orange { background-color:rgb(46, 126, 34) !important; }
+          .nav-link:hover { color:rgb(46, 126, 34) !important; }
+          .dropdown-menu { background-color: #343a40; }
+          .dropdown-item { color: white !important; } /* Make dropdown text white */
+          .dropdown-item:hover { color: rgb(46, 126, 34) !important; background-color: #495057; }
+          .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+          }
         `}
       </style>
     </div>
